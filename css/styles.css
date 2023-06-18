@@ -116,6 +116,20 @@ img {
     stroke: var(--ocean-color);
 }
 
+.mob-menu {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    padding: 80px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
 .menu-close {
     padding: 0;
     position: absolute;
@@ -127,7 +141,6 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     display: flex;
-    margin-left: auto;
     align-items: center;
     justify-content: center;
     transition: background-color var(--transition-timing-function),
@@ -147,6 +160,84 @@ img {
 
 .menu-close:is(:hover, :focus) .menu-close-icon {
     fill: var(--white-color);
+}
+
+.menu-link-item {
+    margin-bottom: 40px;
+}
+
+.menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue-color);
+    transition: color var(--transition-timing-function);
+}
+
+.menu-link:is(:hover, :focus) {
+    color: var(--ocean-color)
+}
+
+.menu-address {
+    font-style: normal;
+}
+
+.menu-address-list {
+    margin-bottom: 48px;
+}
+
+.menu-address-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.menu-address-tel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--iris-color);
+}
+
+.menu-address-mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+}
+
+.menu-soc-list {
+    display: flex;
+    /* gap: 56px; */
+    max-width: 328px;
+    justify-content: space-between;
+}
+
+.menu-soc-item {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-timing-function);
+}
+
+.menu-soc-link:is(:hover, :focus) {
+    background-color: var(--ocean-color);
+}
+
+.menu-soc-icon {
+    fill: var(--cloud-color);
 }
 
 /* ----------------Main------------------- */

@@ -34,62 +34,69 @@
                     <li><a class="address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-            <button type="button" class="menu-open-btn">
+            <button type="button" class="menu-open-btn" data-menu-open>
                 <svg class="menu-open-icon" width="32" height="22">
                     <use href="./images/icons.svg#icon-charm-menu-hamburger"></use>
                 </svg>
             </button>
         </div>
-        <div class="mob-menu">
-            <button type="button" class="menu-close">
-                <svg class="menu-close-icon" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-            </button>
-            <ul class="menu-list list">
-                <li class="menu-item"><a class="menu-link link" href="./index.html">Studio</a></li>
-                <li><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
-                <li><a class="menu-link link" href="">Contacts</a></li>
-            </ul>
-            <address class="menu-address">
-                <ul class="menu-address-list list">
-                    <li><a class="menu-address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                    <li><a class="menu-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <div class="mob-menu is-hidden" data-menu>
+            <div>
+                <button type="button" class="menu-close" data-menu-close>
+                    <svg class="menu-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <ul class="menu-list list">
+                    <li class="menu-link-item"><a class="menu-link link" href="./index.html">Studio</a></li>
+                    <li class="menu-link-item"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="menu-link-item"><a class="menu-link link" href="">Contacts</a></li>
                 </ul>
-            </address>
-            <ul class="menu-soc-list list">
-                <li class="menu-soc-item">
-                    <a href="" class="menu-soc-link link" target="_blank" rel="noopener noreferrer">
-                        <svg class="menu-soc-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
+            </div>
+            <div>
+                <address class="menu-address">
+                    <ul class="menu-address-list list">
+                        <li class="menu-address-item"><a class="menu-address-tel link" href="tel:+110001111111">+11
+                                (000)
+                                111-11-11</a></li>
+                        <li class="menu-address-item"><a class="menu-address-mail link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                </address>
+                <ul class="menu-soc-list list">
+                    <li class="menu-soc-item">
+                        <a href="" class="menu-soc-link link" target="_blank" rel="noopener noreferrer">
+                            <svg class="menu-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
 
-                </li>
-                <li class="menu-soc-item">
-                    <a href="" class="menu-soc-link link" target="_blank" rel="noopener noreferrer">
-                        <svg class="menu-soc-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
+                    </li>
+                    <li class="menu-soc-item">
+                        <a href="" class="menu-soc-link link" target="_blank" rel="noopener noreferrer">
+                            <svg class="menu-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
 
-                </li>
-                <li class="menu-soc-item">
-                    <a href="" class="menu-soc-link link" target="_blank" rel="noopener noreferrer">
-                        <svg class="menu-soc-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
+                    </li>
+                    <li class="menu-soc-item">
+                        <a href="" class="menu-soc-link link" target="_blank" rel="noopener noreferrer">
+                            <svg class="menu-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
 
-                </li>
-                <li class="menu-soc-item">
-                    <a href="" class="menu-soc-link link" target="_blank" rel="noopener noreferrer">
-                        <svg class="menu-soc-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                    </li>
+                    <li class="menu-soc-item">
+                        <a href="" class="menu-soc-link link" target="_blank" rel="noopener noreferrer">
+                            <svg class="menu-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -509,6 +516,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
