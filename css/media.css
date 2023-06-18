@@ -1,6 +1,6 @@
 @media screen and (min-width: 428px) {
     .container {
-        max-width: 426px;
+        max-width: 428px;
     }
 
 
@@ -9,7 +9,9 @@
 @media screen and (min-width: 768px) {
 
     .container {
-        max-width: 768px;
+        max-width: 766px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     /* ---------------Hader------------------- */
@@ -18,6 +20,11 @@
     .header-navigation {
         display: flex;
         align-items: center;
+    }
+
+    .header-logo-link {
+        padding: 0;
+        margin-right: 120px;
     }
 
     .header-list {
@@ -79,8 +86,8 @@
 
     .address-link {
         font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         color: var(--slate-color);
         transition: color var(--transition-timing-function);
@@ -109,6 +116,22 @@
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url(../images/people-office-tab-2x.jpg);
+        }
+    }
+
+    @media (min-width: 769px) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/people-office.jpg);
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/people-office-2x.jpg);
+            }
         }
     }
 
@@ -166,9 +189,7 @@
     }
 
     .footer-logo-container {
-
-
-        /* ???????????????? */
+        text-align: left;
     }
 
     .footer-container {
@@ -193,7 +214,11 @@
         width: 264px;
     }
 
-
+    .modal {
+        width: 408px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -210,6 +235,11 @@
     .address-list {
         gap: 40px;
         flex-direction: row;
+    }
+
+    .address-link {
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .header-logo-link {
