@@ -1,3 +1,5 @@
+/*#region---styles for base---*/
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--slate-color);
@@ -61,7 +63,9 @@ img {
     margin: 0 auto;
 }
 
-/* ---------------Hader------------------- */
+/*#endregion---styles for base---*/
+
+/*#region------------------Hader----------------------*/
 
 .header {
     border-bottom: 1px solid var(--accent-color);
@@ -240,7 +244,9 @@ img {
     fill: var(--cloud-color);
 }
 
-/* ----------------Main------------------- */
+/*#endregion------------------Hader----------------------*/
+
+/*#region----------------Main------------------- */
 
 .hero {
     margin: 0 auto;
@@ -510,25 +516,35 @@ img {
     transition: fill var(--transition-timing-function);
 }
 
-/* ---------------Main for Portfolio---------- */
+/*#endregion----------------Main------------------- */
+
+/*#region---------------Main for Portfolio---------- */
 
 .portfolio-section {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .portfolio-filters-button-list {
-    margin-bottom: 72px;
+    margin-bottom: 48px;
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: left;
+    column-gap: 24px;
+    row-gap: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio-filters-button-list {
+        max-width: 268px;
+    }
 }
 
 .portfolio-filters-button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--iris-color);
@@ -536,7 +552,7 @@ img {
     cursor: pointer;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
-    padding: 12px 24px;
+    padding: 8px 16px;
     transition: background-color var(--transition-timing-function),
         color var(--transition-timing-function),
         border-color var(--transition-timing-function),
@@ -553,12 +569,7 @@ img {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-}
-
-.portfolio-list-item {
-    flex-basis: calc((100% - 48px)/ 3);
+    gap: 48px;
 }
 
 .portfolio-link {
@@ -600,7 +611,9 @@ img {
     border-bottom: 1px solid var(--accent-color);
 }
 
-/* ---------------FOOTER-------------------- */
+/*#endregion---------------Main for Portfolio---------- */
+
+/*#region---------------FOOTER-------------------- */
 
 .footer {
     background-color: var(--navy-blue-color);
@@ -769,7 +782,9 @@ img {
     fill: var(--white-color);
 }
 
-/* ---------------MODAL-------------------- */
+/*#endregion---------------FOOTER-------------------- */
+
+/*#region---------------MODAL-------------------- */
 
 .backdrop {
     position: fixed;
@@ -993,3 +1008,5 @@ img {
     letter-spacing: 0.04em;
     color: var(--iris-color);
 }
+
+/*#endregion---------------MODAL-------------------- */

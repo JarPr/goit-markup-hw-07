@@ -19,7 +19,7 @@
         }
     }
 
-    /* ---------------Hader------------------- */
+    /*#region------------------Hader----------------------*/
 
 
     .header-navigation {
@@ -105,7 +105,9 @@
         display: none;
     }
 
-    /* ----------------Main------------------- */
+    /*#endregion------------------Hader----------------------*/
+
+    /*#region----------------Main------------------- */
 
     @media screen and (max-width: 767px) {
         .hero {
@@ -179,7 +181,37 @@
         width: calc((100% - 48px)/3);
     }
 
-    /* ---------------FOOTER-------------------- */
+    /*#endregion----------------Main------------------- */
+
+    /*#region---------------Main for Portfolio---------- */
+
+    .portfolio-section {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .portfolio-filters-button-list {
+        margin-bottom: 64px;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .portfolio-filters-button {
+        padding: 12px 24px;
+    }
+
+    .portfolio-list {
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .portfolio-list-item {
+        flex-basis: calc((100% - 24px)/ 2);
+    }
+
+    /*#endregion---------------Main for Portfolio---------- */
+
+    /*#region---------------FOOTER-------------------- */
 
     .footer-logo-container {
         text-align: left;
@@ -209,6 +241,8 @@
         width: 264px;
     }
 
+    /*#endregion---------------FOOTER-------------------- */
+
     .modal {
         width: 408px;
         padding-right: 24px;
@@ -224,7 +258,7 @@
         padding-right: 15px;
     }
 
-    /* ---------------Hader------------------- */
+    /*#region------------------Hader----------------------*/
     .header-list {
         gap: 40px;
     }
@@ -243,29 +277,15 @@
         margin-right: 76px;
     }
 
-    /*----------------Main------------------- */
+    /*#endregion------------------Hader----------------------*/
+
+    /*#region----------------Main------------------- */
 
     .hero {
         max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
-
-    /* @media screen and (min-width: 1158px) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/people-office.jpg);
-        }
-    }
-
-    @media (min-device-pixel-ratio: 2) and (min-width: 1158px),
-    (min-resolution: 192dpi) and (min-width: 1158px),
-    (min-resolution: 2dppx) and (min-width: 1158px) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/people-office-2x.jpg);
-        }
-    } */
 
     .hero-title {
         margin-bottom: 48px;
@@ -355,6 +375,31 @@
     .customers-list-item {
         width: calc((100% - 120px)/6);
     }
+
+    /*#endregion----------------Main------------------- */
+
+    /*#region---------------Main for Portfolio---------- */
+
+    .portfolio-section {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+
+    .portfolio-filters-button-list {
+        margin-bottom: 72px;
+    }
+
+    .portfolio-list {
+        row-gap: 48px;
+    }
+
+    .portfolio-list-item {
+        flex-basis: calc((100% - 48px)/ 3);
+    }
+
+    /*#endregion---------------Main for Portfolio---------- */
+
+
 
     .footer {
         padding-top: 100px;
